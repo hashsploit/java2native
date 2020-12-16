@@ -4,9 +4,19 @@ This project uses a containerized GraalVM native-image to "compile" a jar file t
 
 Edit `settings.sh` to modify the `input` class/jar file and `output` binary file names and to add additional native-image arguments.
 
-## How to run
+## How to compile a Jar
 
 Simply run `./compile.sh` and it will take the settings configured in `settings.sh` and it will attempt to compile your java class/jar file into a native linux elf binary.
+
+## How to run native-image directly from within the container
+
+If you choose to just run native-image directly from within the container, you can use the `./native-image.sh` script instead.
+
+For example:
+
+```bash
+./native-image.sh --version
+```
 
 ## GraalVM native-image usage
 

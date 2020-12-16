@@ -1,3 +1,6 @@
 tests/*.class
 tests/*.jar
 tests/test_binary
+hsperfdata_root/
+tests/hsperfdata_root/
+
