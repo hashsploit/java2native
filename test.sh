@@ -15,7 +15,7 @@ if ! command -v docker &> /dev/null; then
 fi
 
 # Check if docker image are already build, if not, build it.
-if [ ! "$(docker images | grep -q $DOCKER_IMAGE)" ]; then
+if [[ "$(docker images -q ${DOCKER_IMAGE} 2>/dev/null)" == "" ]]; then
 	./compile.sh stop-after-docker-image-install
 fi
 

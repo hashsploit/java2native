@@ -16,7 +16,7 @@ if ! command -v docker &> /dev/null; then
 fi
 
 # Check if docker image are already build, if not, build it.
-if [ ! "$(docker images | grep -q $DOCKER_IMAGE)" ]; then
+if [[ "$(docker images -q ${DOCKER_IMAGE} 2>/dev/null)" == "" ]]; then
 	echo -e "Docker image ${DOCKER_IMAGE} not found, building it ..."
 	docker build --build-arg GRAALVM_SOURCE="${GRAALVM_SOURCE}" --tag ${DOCKER_IMAGE} .
 fi
