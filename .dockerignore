@@ -1,0 +1,7 @@
+# Docker ignore file
+compile.sh
+settings.sh
+test.sh
+native-image.sh
+LICENSE
+README.md

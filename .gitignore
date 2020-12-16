@@ -1,0 +1,3 @@
+tests/*.class
+tests/*.jar
+tests/test_binary
