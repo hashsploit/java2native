@@ -17,10 +17,11 @@ chmod 777 -R .
 echo -e "==== RUNNING TESTS ===="
 
 # Test JVM
-echo -e "JVM: "
+echo -e "############# JVM: "
 time java -jar test.jar 2>&1 >/dev/null
 
+echo -e ""
 # Test SVM
-echo -e "SVM: "
+echo -e "############# SVM: "
 time ./test_binary 2>&1 >/dev/null
 
