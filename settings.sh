@@ -4,10 +4,13 @@
 INPUT_FILE="input.jar"
 
 # Output binary name
-OUTPUT_BINARY="output"
+OUTPUT_BINARY="output_binary"
+
+# Can be 'class' or '-jar'
+NI_MODE="-jar"
 
 # Additional GraalVM native-image arguments
-NI_ARGS="-jar"
+NI_ARGS=""
 
 # Docker image name
 DOCKER_IMAGE="java2native"

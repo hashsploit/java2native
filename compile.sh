@@ -35,5 +35,5 @@ docker run \
 	-v $(pwd):/tmp/ \
 	-e NI_ARGS=${NI_ARGS} \
 	-e GRAALVM_SOURCE=${GRAALVM_SOURCE} \
-	${DOCKER_IMAGE} native-image ${NI_ARGS} /tmp/${INPUT_FILE} ${OUTPUT_BINARY}
+	${DOCKER_IMAGE} native-image ${NI_MODE} /tmp/${INPUT_FILE} /tmp/${OUTPUT_BINARY} ${NI_ARGS}
 
