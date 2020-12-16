@@ -24,5 +24,4 @@ docker run \
 	--rm \
 	-it \
 	-v $(pwd)/tests:/tmp/ \
-	-e GRAALVM_SOURCE=${GRAALVM_SOURCE} \
 	${DOCKER_IMAGE} /bin/bash /tmp/tests.sh

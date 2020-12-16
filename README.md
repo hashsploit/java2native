@@ -16,7 +16,10 @@ For example:
 
 ```bash
 ./native-image.sh --version
+
+./native-image.sh -jar /tmp/input.jar /tmp/output.exec -O10 --native-compiler-options="-Wl,--strip-all -O10"
 ```
+
 
 ## GraalVM native-image usage
 

@@ -23,6 +23,5 @@ fi
 docker run \
 	--rm \
 	-it \
-	-v $(pwd)/tests:/tmp/ \
-	-e GRAALVM_SOURCE=${GRAALVM_SOURCE} \
+	-v $(pwd):/tmp/ \
 	${DOCKER_IMAGE} native-image $@
